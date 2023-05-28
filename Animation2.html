@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <link rel="shortcut icon" href="images/css-tricks-favicon-rotate.webp" type="image/x-icon">
+    <style>
+         body{
+            margin: 0;
+        }
+         @keyframes sliding {
+            0%{
+                background-color: yellow;
+                left: 0;
+                top: 0;
+            }
+            25%{
+               top: 525px;
+               transform: scale(0.5);
+               background-color: red;
+            }
+            50%{
+                top: 0;
+                background-color: yellow;
+                transform: scale(1);
+            }
+            75%{
+                top: 525px;
+                transform: scale(0.5);
+                background-color: red;
+            }
+            100%{
+                left: 700px;
+                top: 0;
+                background-color: yellow;
+            }
+        }
+            img{
+            height: 200px;
+            width: 200px;
+            animation: sliding 2s ease-in-out  infinite alternate ;
+            animation-play-state: running;
+        }
+        .tiger{
+            width: 500px;
+            height: 500px;
+            background-color: brown;
+        }
+        h1{
+            text-align: center;
+            color:brown
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation2</h1>
+    <div class="tiger"><img src="images/Lion1.png" alt=""></div>
+</body>
+</html>
